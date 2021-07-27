@@ -1,5 +1,6 @@
 package br.com.paradigmaFuncionalJava;
 
+
 import java.util.function.UnaryOperator;
 
 public class Imutabilidade {
@@ -9,5 +10,7 @@ public class Imutabilidade {
         
         System.out.println(retornarDobro.apply(valor)); 
         System.out.println(valor); // valor nao sera alterado
+        
+        
     }
 }
