@@ -13,8 +13,19 @@ public class Iteracoes {
 		filtrarNomes("Kaio", "Maria","Kaio" ,"João");
 		imprimirNomes("Kaio", "Maria","Kaio" ,"João");
 		
+		List<String> carros = new ArrayList<>();
+		
+		carros.add("Palio");
+		carros.add("Gol");
+		carros.add("Virtus");
+		carros.add("Voyage");
+		
+		carros.stream().filter(carro -> carro.startsWith("V"))
+								.forEach(carro -> System.out.println(carro));
+		
 		}
-
+	
+	
 	public static void filtrarNomes(String... nome) {
 		
 		List<String> stream = Stream.of(nome).filter(name -> name.equals("Kaio")).collect(Collectors.toList());
